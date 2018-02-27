@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="AdvancedSearch_Expertise">
+	<test name="AdvancedSearch_Expertise">
+		<common>
+		<datasets>
+		<dataset>
+			<username>johnhaberer</username>
+			<password>redhat</password>
+			</dataset>
+			</datasets>
+		</common>
+
+		<advanceSearch>
+			<datasets>
+				<dataset>
+					<searchBy>Expertise</searchBy>
+					<valuesToSearch>
+					Search1#IaaS;
+					Search2#PaaS;
+					Search3#Big Data;
+					Search4#Mobility;
+					Search5#IaaS,Containers,Cloud Builder
+					</valuesToSearch>
+				</dataset>
+			</datasets>
+		</advanceSearch>
+
+		<classes>
+			<class name="webonise.redHat.java.RH_Search">
+				<methods>
+					<include name="advanceSearch"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite> 

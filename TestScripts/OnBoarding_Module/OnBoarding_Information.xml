@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="OnBoarding_Information_Module">
+	<test name="OnBoarding_Information">
+		<common>
+			<datasets>
+				<dataset>
+					<username>dcolebatch-aliter</username>
+					<password>redhat</password>
+				</dataset>
+			</datasets>
+		</common>
+
+		<onBoarding>
+			<datasets>
+				<dataset>
+				    <contentType>application/x-www-form-urlencoded</contentType>
+				    <method>GET</method>
+				    <authApp>574123cdff6a6d6cc3620ca2c0b14f33518b2575</authApp>
+				    <status>200</status>
+				    <instance>test</instance>
+				    <url>/api/v1/user/deals</url>
+					<phone>Hide</phone>
+					<email>UnHide</email>
+					<!-- Location -->
+						<stresstAddress>Bavdhan</stresstAddress>
+						<country>INDIA</country>
+						<state>Maharashtra</state>
+						<city>Pune</city>
+						<postalCode>411021</postalCode>
+					<!-- Industry -->
+						<industry>aerospace</industry>
+					<!-- Area of Focus -->
+						<areaOfFocus>Big Data</areaOfFocus>
+					<!-- Red Hat Product Expertise -->
+						<redHatProductExpertise>Platform:Red Hat Enterprise Virtualization,
+												Middleware:Red Hat JBoss BPM Suite,
+												Cloud:Atomic Enterprise Platform,
+												Management:Ansible Tower,
+												Storage:Red Hat Ceph Storage,
+												Mobile:Red Hat Mobile Application Platform
+						</redHatProductExpertise>
+					<!-- Social Link URLs -->
+						<socialLinkURL>http://www.google.com/</socialLinkURL>
+					<!-- Anything else -->
+						<anythingElseAboutYou>ANDROID DEVELOPER,AUTOMATION QA</anythingElseAboutYou>
+					<!-- Notify -->
+						<favorites>Yes</favorites>
+						<message>Yes</message>
+				</dataset>
+			</datasets>
+		</onBoarding>
+
+		<classes>
+			<class name="webonise.redHat.java.RH_OnBoarding">
+				<methods>
+					<include name="onBoarding" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite> 

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="LoginLogout_Walkthrough">
+	<test name="LoginLogout_Walkthrough">
+		
+
+		<valid_login>
+			<datasets>
+				<dataset>
+					<username>johnhaberer</username>
+					<password>redhat</password>
+					<loginType>walkthrough</loginType>
+				</dataset>
+			</datasets>
+		</valid_login>
+		
+		<classes>
+			<class name="webonise.redHat.java.RH_Login">
+				<methods>
+					<include name="valid_login" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite> 

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="AdvancedSearch_ProductExpertise_Cloud">
+	<test name="AdvancedSearch_ProductExpertise_Cloud">
+		<common>
+		<datasets>
+		<dataset>
+			<username>johnhaberer</username>
+			<password>redhat</password>
+			</dataset>
+			</datasets>
+		</common>
+
+		<advanceSearch>
+			<datasets>
+				<dataset>
+					<searchBy>Red Hat Product Expertise</searchBy>
+					<valuesToSearch>
+					Search1#Cloud*Red Hat Cloud Infrastructure for Openstack Platform;
+					Search2#Cloud*Red Hat Cloud Suite for Infrastructure;
+					Search3#Cloud*OpenShift Enterprise by Red Hat;
+					Search4#Cloud*Red Hat JBoss xPaaS Services for OpenShift;
+					Search5#Cloud*Atomic Enterprise Platform;
+					Search6#Cloud*Red Hat OpenStack Platform;
+					Search7#Cloud*Red Hat Cloud Infrastructure for Openstack Platform,Red Hat Cloud Suite for Infrastructure;
+					Search8#Cloud*Red Hat Cloud Infrastructure for Openstack Platform,OpenShift Enterprise by Red Hat;
+					Search9#Cloud*Red Hat Cloud Infrastructure for Openstack Platform,Red Hat JBoss xPaaS Services for OpenShift;
+					Search10#Cloud*Red Hat Cloud Infrastructure for Openstack Platform,Atomic Enterprise Platform;
+					Search11#Cloud*Red Hat Cloud Infrastructure for Openstack Platform,Red Hat OpenStack Platform;
+					Search12#Cloud*Red Hat Cloud Infrastructure for Openstack Platform,Red Hat Cloud Suite for Infrastructure,OpenShift Enterprise by Red Hat;
+					Search13#Cloud*Red Hat Cloud Infrastructure for Openstack Platform,Red Hat Cloud Suite for Infrastructure,Red Hat JBoss xPaaS Services for OpenShift;
+					Search14#Cloud*Red Hat Cloud Infrastructure for Openstack Platform,Red Hat Cloud Suite for Infrastructure,Atomic Enterprise Platform;
+					Search15#Cloud*Red Hat Cloud Infrastructure for Openstack Platform,Red Hat Cloud Suite for Infrastructure,Red Hat OpenStack Platform
+					</valuesToSearch>
+				</dataset>
+			</datasets>
+		</advanceSearch>
+
+		<classes>
+			<class name="webonise.redHat.java.RH_Search">
+				<methods>
+					<include name="advanceSearch"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite> 

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="NormalSearch_Module">
+	<test name="NormalSearch_1">
+		<common>
+		<datasets>
+		<dataset>
+			<username>johnhaberer</username>
+			<password>redhat</password>
+			</dataset>
+			</datasets>
+		</common>
+
+		<recentSearch>
+			<datasets>
+				<dataset>
+				    <contentType>application/x-www-form-urlencoded</contentType>
+				    <method>GET</method>
+				    <authApp>574123cdff6a6d6cc3620ca2c0b14f33518b2575</authApp>
+				    <status>200</status>
+				    <instance>test</instance>
+				    <url>/api/v1/user/recent-searches</url>
+				</dataset>
+			</datasets>
+		</recentSearch>
+
+		<classes>
+			<class name="webonise.redHat.java.RH_Search">
+				<methods>
+					<include name="recentSearch"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite> 

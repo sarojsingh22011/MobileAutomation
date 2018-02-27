@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="AdvancedSearch_Industry">
+	<test name="AdvancedSearch_Industry">
+		<common>
+		<datasets>
+		<dataset>
+			<username>johnhaberer</username>
+			<password>redhat</password>
+			</dataset>
+			</datasets>
+		</common>
+
+		<advanceSearch>
+			<datasets>
+				<dataset>
+					<searchBy>Industry</searchBy>
+					<valuesToSearch>
+					Search1#Aerospace;
+					Search2#Construction;
+					Search3#Consulting;
+					Search4#Education;
+					Search5#Aerospace,Education
+					</valuesToSearch>
+				</dataset>
+			</datasets>
+		</advanceSearch>
+
+		<classes>
+			<class name="webonise.redHat.java.RH_Search">
+				<methods>
+					<include name="advanceSearch"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite> 

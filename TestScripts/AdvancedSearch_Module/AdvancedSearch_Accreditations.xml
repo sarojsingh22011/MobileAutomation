@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="AdvancedSearch_Accreditations">
+	<test name="AdvancedSearch_Accreditations">
+		<common>
+		<datasets>
+		<dataset>
+			<username>johnhaberer</username>
+			<password>redhat</password>
+			</dataset>
+			</datasets>
+		</common>
+
+		<advanceSearch>
+			<datasets>
+				<dataset>
+					<searchBy>Accreditations</searchBy>
+					<valuesToSearch>
+					Search1#Data Center Infrastructure;
+					Search2#Middleware Solutions;
+					Search3#Cloud Infrastructure;
+					Search4#Data Center Infrastructure,Middleware Solutions;
+					Search5#Data Center Infrastructure,Middleware Solutions,Cloud Infrastructure
+					</valuesToSearch>
+				</dataset>
+			</datasets>
+		</advanceSearch>
+
+		<classes>
+			<class name="webonise.redHat.java.RH_Search">
+				<methods>
+					<include name="advanceSearch"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite> 

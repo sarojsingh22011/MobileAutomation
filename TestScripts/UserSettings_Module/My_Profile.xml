@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="User_Settings">
+	<test name="User_Settings">
+		
+
+		<valid_login>
+			<datasets>
+				<dataset>
+					<username>johnhaberer</username>
+					<password>redhat</password>
+				</dataset>
+			</datasets>
+		</valid_login>
+		
+		<myProfile>
+			<datasets>
+				<dataset>
+					<!-- Location -->
+						<stresstAddress>Bavdhan</stresstAddress>
+						<country>INDIA</country>
+						<state>Maharashtra</state>
+						<city>Pune</city>
+						<postalCode>411021</postalCode>
+					<!-- Industry -->
+						<industry>aerospace,education,information technology,insurance,retail,telecom</industry>
+					<!-- Area of Focus -->
+						<areaOfFocus>Big Data,Datacenter modernization,IaaS,Mobility,Territory Sales Coverage</areaOfFocus>
+					<!-- Red Hat Product Expertise -->
+						<redHatProductExpertise>Platform:Red Hat Enterprise Virtualization,
+												Middleware:Red Hat JBoss BPM Suite#Red Hat JBoss Data Virtualization,
+												Cloud:Atomic Enterprise Platform#Red Hat Cloud Infrastructure for Openstack Platform#Red Hat OpenStack Platform,
+												Management:Ansible Tower#Red Hat CloudForms#Red Hat JBoss Operations Network#Red Hat Satellite,
+												Storage:Red Hat Ceph Storage,
+												Mobile:Red Hat Mobile Application Platform</redHatProductExpertise>
+					<!-- Social Link URLs -->
+						<socialLinkURL>http://www.google.com/</socialLinkURL>
+					<!-- Anything else -->
+						<anythingElseAboutYou>ANDROID DEVELOPER,AUTOMATION QA</anythingElseAboutYou>
+				</dataset>
+			</datasets>
+		</myProfile>
+		
+
+		<classes>
+			<class name="webonise.redHat.java.RH_UserSettings">
+				<methods>
+					<include name="valid_login" />
+					<include name="myProfile" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite> 

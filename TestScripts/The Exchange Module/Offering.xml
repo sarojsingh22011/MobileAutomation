@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="The_Exchange">
+	<test name="Offering">
+		<common>
+			<datasets>
+				<dataset>
+					<username>rjnance</username>
+					<password>redhat</password>
+				</dataset>
+			</datasets>
+		</common>
+
+		<createOffering>
+			<datasets>
+				<dataset>
+				    <userType>NA</userType>
+				<!-- Listing -->
+					<seekingTitle>OfferingTitle</seekingTitle>>
+					<yourPosting>Offering: Testing your posting</yourPosting>
+					<addUrl>www.facebook.com</addUrl>
+				</dataset>
+			</datasets>
+		</createOffering>
+
+		<draftEdit>
+			<datasets>
+				<dataset>
+					<statusHeading>status:</statusHeading>
+					<nameHeading>name:</nameHeading>
+					<emailHeading>email:</emailHeading>
+					<companyHeading>company:</companyHeading>
+					<dealRegistrationHeading>Deal Registration</dealRegistrationHeading>
+					<myDealsHeading>My Deals</myDealsHeading>
+					<countryOfOrder>United States</countryOfOrder>
+				</dataset>
+			</datasets>
+		</draftEdit>
+		
+		<classes>
+			<class name="webonise.redHat.java.RH_TheExchange">
+				<methods>
+					<include name="createOffering" />
+					<include name="draftEdit" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite> 

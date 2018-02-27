@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="AdvancedSearch_ProductExpertise_StorageMobile">
+	<test name="AdvancedSearch_ProductExpertise_StorageMobile">
+		<common>
+		<datasets>
+		<dataset>
+			<username>johnhaberer</username>
+			<password>redhat</password>
+			</dataset>
+			</datasets>
+		</common>
+
+		<advanceSearch>
+			<datasets>
+				<dataset>
+					<searchBy>Red Hat Product Expertise</searchBy>
+					<valuesToSearch>
+					Search1#Storage*Red Hat Gluster Storage;
+					Search3#Storage*Red Hat Gluster Storage,Red Hat Ceph Storage;
+					Search4#Mobile*Red Hat Mobile Application Platform
+					</valuesToSearch>
+				</dataset>
+			</datasets>
+		</advanceSearch>
+
+		<classes>
+			<class name="webonise.redHat.java.RH_Search">
+				<methods>
+					<include name="advanceSearch"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite> 

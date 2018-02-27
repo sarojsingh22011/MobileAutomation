@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="NormalSearch_Module">
+	<test name="NormalSearch_1">
+		<common>
+		<datasets>
+		<dataset>
+			<username>tklein@ptnet.com</username>
+			<password>redhat</password>
+			</dataset>
+			</datasets>
+		</common>
+
+		<normalSearch>
+			<datasets>
+				<dataset>
+				    <contentType>application/x-www-form-urlencoded</contentType>
+				    <method>POST</method>
+				    <authApp>574123cdff6a6d6cc3620ca2c0b14f33518b2575</authApp>
+				    <status>200</status>
+				    <instance>test</instance>
+				    <url>/api/v1/search</url>
+				<textToSearch>
+				Search1#I am looking for java developer#keywords#java,developer;
+				Search2#I am looking for cloud front-end developer#keywords#cloud,front-end,developer;
+				Search3#I am searching java developer with android knowledge#keywords#java,developer,android,knowledge
+				</textToSearch>
+				</dataset>
+			</datasets>
+		</normalSearch>
+
+		<classes>
+			<class name="webonise.redHat.java.RH_Search">
+				<methods>
+					<include name="normalSearch"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite> 

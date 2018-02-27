@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="AdvancedSearch_ProductExpertise_Cloud">
+	<test name="AdvancedSearch_ProductExpertise_Cloud">
+		<common>
+		<datasets>
+		<dataset>
+			<username>johnhaberer</username>
+			<password>redhat</password>
+			</dataset>
+			</datasets>
+		</common>
+
+		<advanceSearch>
+			<datasets>
+				<dataset>
+					<searchBy>Partner Profile</searchBy>
+					<valuesToSearch>
+					Search1#Route To Market*Corporate Reseller;
+					Search2#Route To Market*Distributor,Service/Cloud Provider;
+					Search3#Route To Market*OEM,Solution Provider,Systems Integrator
+					</valuesToSearch>
+				</dataset>
+			</datasets>
+		</advanceSearch>
+
+		<classes>
+			<class name="webonise.redHat.java.RH_Search">
+				<methods>
+					<include name="advanceSearch"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite> 

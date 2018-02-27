@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="AdvancedSearch_PartnerProfile_PartnerLevel">
+	<test name="AdvancedSearch_PartnerProfile_PartnerLevel">
+		<common>
+		<datasets>
+		<dataset>
+			<username>johnhaberer</username>
+			<password>redhat</password>
+			</dataset>
+			</datasets>
+		</common>
+
+		<advanceSearch>
+			<datasets>
+				<dataset>
+					<searchBy>Partner Profile</searchBy>
+					<valuesToSearch>
+					Search1#Partner Level*PREMIER;
+					Search2#Partner Level*PREMIER,ADVANCED;
+					Search3#Partner Level*PREMIER,ADVANCED,READY
+					</valuesToSearch>
+				</dataset>
+			</datasets>
+		</advanceSearch>
+
+		<classes>
+			<class name="webonise.redHat.java.RH_Search">
+				<methods>
+					<include name="advanceSearch"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite> 

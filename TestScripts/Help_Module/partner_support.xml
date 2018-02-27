@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="help">
+	<test name="help_partnersupport">
+		<common>
+			<datasets>
+				<dataset>
+					<username>rjnance</username>
+					<password>redhat</password>
+				</dataset>
+			</datasets>
+		</common>
+
+		<partnersupport>
+			<datasets>
+				<dataset>
+				    <userType>NA</userType>
+					<department>IT - Network</department>
+					<jobrole>Director</jobrole>
+					<issuetype>Login issue</issuetype>
+					<comments>This is automation test.</comments>
+					<followup>Yes</followup>
+					
+				</dataset>
+			</datasets>
+		</partnersupport>
+
+			
+		<classes>
+			<class name="webonise.redHat.java.RH_Help">
+				<methods>
+					<include name="partnersupport" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite> 

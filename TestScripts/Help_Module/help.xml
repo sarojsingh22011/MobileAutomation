@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="The_Exchange">
+	<test name="Seeking">
+		<common>
+			<datasets>
+				<dataset>
+					<username>rjnance</username>
+					<password>redhat</password>
+				</dataset>
+			</datasets>
+		</common>
+
+		<createSeeking>
+			<datasets>
+				<dataset>
+				    <userType>NA</userType>
+				<!-- Listing -->
+					<seekingTitle>SeekingTitle</seekingTitle>>
+					<yourPosting>Seeking: Testing your posting</yourPosting>
+					<addUrl>www.google.com</addUrl>
+				<!-- Opportunity Details -->
+					<dealType>New</dealType>
+					<dealSource>Existing Customer</dealSource>
+					<productFamily>JBoss</productFamily>
+					<projectBudgetAmount>5000</projectBudgetAmount>
+					<redHatSubscriptionRevenue>10000</redHatSubscriptionRevenue>
+					<distributor>Direct</distributor>
+					<estimatedCloseDate>2017-01-01</estimatedCloseDate>
+					<doTheyHaveFundingForThisQuarter>Yes</doTheyHaveFundingForThisQuarter>
+					<fundingSource>Intel Funding</fundingSource>
+					<doTheyHaveOpenSourceStrategy>Yes</doTheyHaveOpenSourceStrategy>
+				<!-- Partner Information -->
+					<areYouTheSalesRepForThisLead>Yes</areYouTheSalesRepForThisLead>
+				<!-- Project Description -->
+					<projectDescription>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</projectDescription>
+				<!-- Lead Notes -->
+					<productsOfInterest>JBoss</productsOfInterest>
+					<oemHardwareOptions>OEM</oemHardwareOptions>
+					<marketingProgram>Next Gen Datacenter - U2L</marketingProgram>
+				<!-- Submit Deal -->
+					<submitDeal>Submit</submitDeal>
+				</dataset>
+			</datasets>
+		</createSeeking>>
+
+		<draftEdit>
+			<datasets>
+				<dataset>
+					<statusHeading>status:</statusHeading>
+					<nameHeading>name:</nameHeading>
+					<emailHeading>email:</emailHeading>
+					<companyHeading>company:</companyHeading>
+					<dealRegistrationHeading>Deal Registration</dealRegistrationHeading>
+					<myDealsHeading>My Deals</myDealsHeading>
+					<countryOfOrder>United States</countryOfOrder>
+				</dataset>
+			</datasets>
+		</draftEdit>
+		
+		<classes>
+			<class name="webonise.redHat.java.RH_TheExchange">
+				<methods>
+					<include name="createSeeking" />
+					<include name="draftEdit" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite> 

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="AdvancedSearch_productExpertise_Middleware">
+	<test name="AdvancedSearch_productExpertise_Middleware">
+		<common>
+		<datasets>
+		<dataset>
+			<username>johnhaberer</username>
+			<password>redhat</password>
+			</dataset>
+			</datasets>
+		</common>
+
+		<advanceSearch>
+			<datasets>
+				<dataset>
+					<searchBy>Red Hat Product Expertise</searchBy>
+					<valuesToSearch>
+					Search1#Middleware*Red Hat JBoss Enterprise Application Platform;
+					Search2#Middleware*Red Hat JBoss Web Server;
+					Search3#Middleware*Red Hat JBoss Data Grid;
+					Search4#Middleware*Red Hat JBoss Portal;
+					Search5#Middleware*Red Hat JBoss Developer Studio;
+					Search7#Middleware*Red Hat JBoss Fuse;
+					Search8#Middleware*Red Hat JBoss Fuse Service Works;
+					Search9#Middleware*Red Hat JBoss A-.MQ;
+					Search10#Middleware*Red Hat JBoss Data Virtualization;
+					Search11#Middleware*Red Hat JBoss BRMS;
+					Search12#Middleware*Red Hat JBoss BPM Suite;
+					Search13#Middleware*Red Hat JBoss Enterprise Application Platform,Red Hat JBoss Web Server;
+					Search14#Middleware*Red Hat JBoss Enterprise Application Platform,Red Hat JBoss Data Grid;
+					Search15#Middleware*Red Hat JBoss Enterprise Application Platform,Red Hat JBoss Portal;
+					Search16#Middleware*Red Hat JBoss Enterprise Application Platform,Red Hat JBoss Developer Studio;
+					<!--  Search17#Middleware*Red Hat JBoss Enterprise Application Platform,Red Hat JBoss Operations Network;-->
+					Search18#Middleware*Red Hat JBoss Enterprise Application Platform,Red Hat JBoss Fuse;
+					Search19#Middleware*Red Hat JBoss Enterprise Application Platform,Red Hat JBoss Fuse Service Works;
+					Search20#Middleware*Red Hat JBoss Enterprise Application Platform,Red Hat JBoss A-.MQ;
+					Search21#Middleware*Red Hat JBoss Enterprise Application Platform,Red Hat JBoss Data Virtualization;
+					Search22#Middleware*Red Hat JBoss Enterprise Application Platform,Red Hat JBoss BRMS;
+					Search23#Middleware*Red Hat JBoss Enterprise Application Platform,Red Hat JBoss BPM Suite;
+					Search24#Middleware*Red Hat JBoss Enterprise Application Platform,Red Hat JBoss Web Server,Red Hat JBoss Data Grid;
+					Search25#Middleware*Red Hat JBoss Enterprise Application Platform,Red Hat JBoss Web Server,Red Hat JBoss Portal;
+					Search26#Middleware*Red Hat JBoss Enterprise Application Platform,Red Hat JBoss Web Server,Red Hat JBoss Developer Studio;
+					<!-- Search27#Middleware*Red Hat JBoss Enterprise Application Platform,Red Hat JBoss Web Server,Red Hat JBoss Operations Network;-->
+					Search28#Middleware*Red Hat JBoss Enterprise Application Platform,Red Hat JBoss Web Server,Red Hat JBoss Fuse;
+					Search29#Middleware*Red Hat JBoss Enterprise Application Platform,Red Hat JBoss Web Server,Red Hat JBoss Fuse Service Works;
+					Search30#Middleware*Red Hat JBoss Enterprise Application Platform,Red Hat JBoss Web Server,Red Hat JBoss A-.MQ;
+					Search31#Middleware*Red Hat JBoss Enterprise Application Platform,Red Hat JBoss Web Server,Red Hat JBoss Data Virtualization;
+					Search32#Middleware*Red Hat JBoss Enterprise Application Platform,Red Hat JBoss Web Server,Red Hat JBoss BRMS;
+					Search33#Middleware*Red Hat JBoss Enterprise Application Platform,Red Hat JBoss Web Server,Red Hat JBoss BPM Suite
+					</valuesToSearch>
+				</dataset>
+			</datasets>
+		</advanceSearch>
+
+		<classes>
+			<class name="webonise.redHat.java.RH_Search">
+				<methods>
+					<include name="advanceSearch"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite> 

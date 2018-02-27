@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="User_Settings">
+	<test name="User_Settings">
+		
+
+		<valid_login>
+			<datasets>
+				<dataset>
+					<username>johnhaberer</username>
+					<password>redhat</password>
+				</dataset>
+			</datasets>
+		</valid_login>
+		
+		<userSettings>
+			<datasets>
+				<dataset>
+					<photoPopUpHeading>Select option to take photo</photoPopUpHeading>
+					<photoPopUpFirstButtton>Take Photo</photoPopUpFirstButtton>
+					<photoPopUpSecButtton>Choose from Gallery</photoPopUpSecButtton>
+					<photoPopUpThirdButtton>Cancel</photoPopUpThirdButtton>
+				</dataset>
+			</datasets>
+		</userSettings>
+		
+
+		<classes>
+			<class name="webonise.redHat.java.RH_UserSettings">
+				<methods>
+					<include name="valid_login" />
+					<include name="userSettings" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite> 

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="DealRegistration_SaveEdit1">
+	<test name="DealRegistration_SaveEdit1">
+		<common>
+			<datasets>
+				<dataset>
+					<username>jmatala</username>
+					<password>redhat</password>
+				</dataset>
+			</datasets>
+		</common>
+
+		<dealRegistration_apac>
+			<datasets>
+				<dataset>
+				    <userType>APAC</userType>
+				<!-- Customer Information -->
+					<decisionRole>Decision Maker</decisionRole>
+					<country>UNITED STATES</country>
+					<state>Arizona</state>
+					<countryOfOrder>India</countryOfOrder>
+					<rhnEntitlementLogin>redhat</rhnEntitlementLogin>
+				<!-- Opportunity Details -->
+					<dealType>New</dealType>
+					<dealSource>Existing Customer</dealSource>
+					<productFamily>JBoss</productFamily>
+					<projectBudgetAmount>5000</projectBudgetAmount>
+					<redHatSubscriptionRevenue>10000</redHatSubscriptionRevenue>
+					<distributor>BE - Arrow ECS SA</distributor>
+					<estimatedCloseDate>2017-01-01</estimatedCloseDate>
+					<fundingsource>Intel Funding</fundingsource>
+					<doTheyHaveFundingForThisQuarter>Yes</doTheyHaveFundingForThisQuarter>
+					<doTheyHaveOpenSourceStrategy>Yes</doTheyHaveOpenSourceStrategy>
+					<leadCurrency>CAD</leadCurrency>
+					<dealRegistrationAmt>10000</dealRegistrationAmt>
+					<estimatedCloseDate>2017-12-01</estimatedCloseDate>
+				<!-- Partner Information -->
+					<areYouTheSalesRepForThisLead>Yes</areYouTheSalesRepForThisLead>
+					<partnerProgramSelect>S+</partnerProgramSelect>
+					<partnerFirstName>Automation</partnerFirstName>
+					<partnerLastName>User</partnerLastName>
+					<partnerContactCustomer>Yes</partnerContactCustomer>
+					<partnerAdditionalSupport>Yes</partnerAdditionalSupport>
+				<!-- Project Description -->
+					<projectDescription>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</projectDescription>
+					<productInterest>3scale by Red Hat</productInterest>
+				<!-- Lead Notes -->
+					<productsOfInterest>JBoss</productsOfInterest>
+					<oemHardwareOptions>OEM</oemHardwareOptions>
+					<marketingProgram>Next Gen Datacenter - U2L</marketingProgram>
+					<emeaLeadSource>Own initiated</emeaLeadSource>
+					<emeaLeadSourceSubOption>Event/ Webinar</emeaLeadSourceSubOption>
+					<!-- Additional Comments -->
+					<partnerComments>I m an automation engineer</partnerComments>
+				</dataset>
+			</datasets>
+		</dealRegistration_apac>
+
+		<draftEdit>
+			<datasets>
+				<dataset>
+					<statusHeading>status:</statusHeading>
+					<nameHeading>name:</nameHeading>
+					<emailHeading>email:</emailHeading>
+					<companyHeading>company:</companyHeading>
+					<dealRegistrationHeading>Deal Registration</dealRegistrationHeading>
+					<myDealsHeading>My Deals</myDealsHeading>
+					<countryOfOrder>United States</countryOfOrder>
+				</dataset>
+			</datasets>
+		</draftEdit>
+		
+		<classes>
+			<class name="webonise.redHat.java.RH_Deals">
+				<methods>
+					<include name="dealRegistration_apac" />
+					<include name="draftEdit" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite> 

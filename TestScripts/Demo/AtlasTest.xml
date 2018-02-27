@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Atlas_Test">
+	<test name="Atlas_Test">
+		<classes>
+			<class name="com.nbnco.uat.mobile.MobileDemo">
+				<methods>
+					<include name="atlasTest"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite> 

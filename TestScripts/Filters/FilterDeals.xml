@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="DealsFilter">
+	<test name="DealsFilter">
+		<common>
+			<datasets>
+				<dataset>
+					<username>johnhaberer</username>
+					<password>redhat</password>
+				</dataset>
+			</datasets>
+		</common>
+
+		<login>
+			<datasets>
+				<dataset>
+				    <contentType>application/x-www-form-urlencoded</contentType>
+				    <method>GET</method>
+				    <authApp>574123cdff6a6d6cc3620ca2c0b14f33518b2575</authApp>
+				    <status>200</status>
+				    <instance>test</instance>
+				    <url>/api/v1/user/deals</url>
+				</dataset>
+			</datasets>
+		</login>
+
+		<filterDeals>
+			<datasets>
+				<dataset>
+				</dataset>
+			</datasets>
+		</filterDeals>
+		
+		<classes>
+			<class name="webonise.redHat.java.RH_Filters">
+				<methods>
+					<include name="login" />
+					<include name="filterDeals" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite> 

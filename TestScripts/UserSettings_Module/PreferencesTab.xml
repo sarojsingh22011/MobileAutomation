@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="User_Settings">
+	<test name="User_Settings">
+		
+
+		<valid_login>
+			<datasets>
+				<dataset>
+					<username>johnhaberer</username>
+					<password>redhat</password>
+				</dataset>
+			</datasets>
+		</valid_login>
+		
+		<preferencesTab>
+			<datasets>
+				<dataset>
+					<!-- Notify -->
+						<favorites>Yes</favorites>
+						<message>Yes</message>
+				</dataset>
+			</datasets>
+		</preferencesTab>
+		
+
+		<classes>
+			<class name="webonise.redHat.java.RH_UserSettings">
+				<methods>
+					<include name="valid_login" />
+					<include name="preferencesTab" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite> 

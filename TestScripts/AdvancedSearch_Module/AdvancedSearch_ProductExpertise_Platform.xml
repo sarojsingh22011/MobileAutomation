@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="AdvancedSearch_ProductExpertise_Platform">
+	<test name="AdvancedSearch_ProductExpertise_Platform">
+		<common>
+		<datasets>
+		<dataset>
+			<username>johnhaberer</username>
+			<password>redhat</password>
+			</dataset>
+			</datasets>
+		</common>
+
+		<advanceSearch>
+			<datasets>
+				<dataset>
+					<searchBy>Red Hat Product Expertise</searchBy>
+					<valuesToSearch>
+					Search1#Platform*Red Hat Enterprise Linux;
+					Search2#Platform*Red Hat Enterprise Virtualization;
+					Search3#Platform*Red Hat Enterprise Linux,Red Hat Enterprise Virtualization
+					</valuesToSearch>
+				</dataset>
+			</datasets>
+		</advanceSearch>
+
+		<classes>
+			<class name="webonise.redHat.java.RH_Search">
+				<methods>
+					<include name="advanceSearch"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite> 

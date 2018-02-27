@@ -1,0 +1,153 @@
+2018-02-27 01:50:40:421 - info: Welcome to Appium v1.4.16 (REV ae6877eff263066b26328d457bd285c0cc62430d)
+2018-02-27 01:50:40:422 - info: Appium REST http interface listener started on 127.0.0.1:4723
+2018-02-27 01:50:40:425 - info: [debug] Non-default server args: {"address":"127.0.0.1","fullReset":true,"log":"C:/Users/saroj.singh/Downloads/RedHat_Automation-master/RedHat_Automation-master/RedHat/appiumLogs.txt"}
+2018-02-27 01:50:40:425 - info: Console LogLevel: debug
+2018-02-27 01:50:40:425 - info: File LogLevel: debug
+2018-02-27 01:50:48:036 - info: --> POST /wd/hub/session {"desiredCapabilities":{"app":"C:\\Users\\saroj.singh\\Downloads\\RedHat_Automation-master\\RedHat_Automation-master\\RedHat\\App\\Android\\WhatsApp.apk","newCommandTimeout":"200","platformVersion":"6.0","browserName":"","platformName":"Android","deviceName":"Nexus_4_API_23"}}
+2018-02-27 01:50:48:038 - info: Client User-Agent string: Apache-HttpClient/4.5.2 (Java/1.8.0_161)
+2018-02-27 01:50:48:041 - info: [debug] No appActivity desired capability or server param. Parsing from apk.
+2018-02-27 01:50:48:041 - info: [debug] No appPackage desired capability or server param. Parsing from apk.
+2018-02-27 01:50:48:042 - info: [debug] Using local app from desired caps: C:\Users\saroj.singh\Downloads\RedHat_Automation-master\RedHat_Automation-master\RedHat\App\Android\WhatsApp.apk
+2018-02-27 01:50:48:052 - info: [debug] Creating new appium session a9d6e085-e57d-4ceb-9532-da30caf66f33
+2018-02-27 01:50:48:053 - info: Starting android appium
+2018-02-27 01:50:48:054 - info: [debug] Getting Java version
+2018-02-27 01:50:48:270 - info: Java version is: 1.8.0_161
+2018-02-27 01:50:48:271 - info: [debug] Checking whether adb is present
+2018-02-27 01:50:48:274 - info: [debug] Using adb from C:\Users\saroj.singh\AppData\Local\Android\Sdk\platform-tools\adb.exe
+2018-02-27 01:50:48:274 - info: [debug] Parsing package and activity from app manifest
+2018-02-27 01:50:48:275 - info: [debug] Checking whether aapt is present
+2018-02-27 01:50:48:276 - info: [debug] Using aapt from C:\Users\saroj.singh\AppData\Local\Android\Sdk\build-tools\27.0.3\aapt.exe
+2018-02-27 01:50:48:276 - info: [debug] Extracting package and launch activity from manifest.
+2018-02-27 01:50:48:277 - info: [debug] executing cmd: C:\Users\saroj.singh\AppData\Local\Android\Sdk\build-tools\27.0.3\aapt.exe dump badging C:\Users\saroj.singh\Downloads\RedHat_Automation-master\RedHat_Automation-master\RedHat\App\Android\WhatsApp.apk
+2018-02-27 01:50:48:787 - info: [debug] badging package: com.whatsapp
+2018-02-27 01:50:48:788 - info: [debug] badging act: com.whatsapp.Main
+2018-02-27 01:50:48:788 - info: [debug] Parsed package and activity are: com.whatsapp/com.whatsapp.Main
+2018-02-27 01:50:48:789 - info: [debug] Using fast reset? false
+2018-02-27 01:50:48:790 - info: [debug] Preparing device for session
+2018-02-27 01:50:48:790 - info: [debug] Checking whether app is actually present
+2018-02-27 01:50:48:791 - info: Retrieving device
+2018-02-27 01:50:48:792 - info: [debug] Trying to find a connected android device
+2018-02-27 01:50:48:792 - info: [debug] Getting connected devices...
+2018-02-27 01:50:48:793 - info: [debug] executing cmd: C:\Users\saroj.singh\AppData\Local\Android\Sdk\platform-tools\adb.exe devices
+2018-02-27 01:50:49:026 - info: [debug] 1 device(s) connected
+2018-02-27 01:50:49:027 - info: Found device emulator-5554
+2018-02-27 01:50:49:027 - info: [debug] Setting device id to emulator-5554
+2018-02-27 01:50:49:028 - info: [debug] Waiting for device to be ready and to respond to shell commands (timeout = 5)
+2018-02-27 01:50:49:029 - info: [debug] executing cmd: C:\Users\saroj.singh\AppData\Local\Android\Sdk\platform-tools\adb.exe -s emulator-5554 wait-for-device
+2018-02-27 01:50:49:285 - info: [debug] executing cmd: C:\Users\saroj.singh\AppData\Local\Android\Sdk\platform-tools\adb.exe -s emulator-5554 shell "echo 'ready'"
+2018-02-27 01:50:49:452 - info: [debug] Starting logcat capture
+2018-02-27 01:50:49:547 - info: [debug] Getting device API level
+2018-02-27 01:50:49:548 - info: [debug] executing cmd: C:\Users\saroj.singh\AppData\Local\Android\Sdk\platform-tools\adb.exe -s emulator-5554 shell "getprop ro.build.version.sdk"
+2018-02-27 01:50:49:730 - info: [debug] Device is at API Level 23
+2018-02-27 01:50:49:731 - info: Device API level is: 23
+2018-02-27 01:50:49:731 - info: [debug] Extracting strings for language: default
+2018-02-27 01:50:49:733 - info: [debug] executing cmd: C:\Users\saroj.singh\AppData\Local\Android\Sdk\platform-tools\adb.exe -s emulator-5554 shell "getprop persist.sys.language"
+2018-02-27 01:50:49:913 - info: [debug] Current device persist.sys.language: 
+2018-02-27 01:50:49:914 - info: [debug] java -jar "C:\Program Files (x86)\Appium\node_modules\appium\node_modules\appium-adb\jars\appium_apk_tools.jar" "stringsFromApk" "C:\Users\saroj.singh\Downloads\RedHat_Automation-master\RedHat_Automation-master\RedHat\App\Android\WhatsApp.apk" "C:\Users\saroj.singh\AppData\Local\Temp\com.whatsapp" 
+2018-02-27 01:50:57:227 - info: [debug] Reading strings from converted strings.json
+2018-02-27 01:50:57:271 - info: [debug] Setting language to default
+2018-02-27 01:50:57:271 - info: [debug] executing cmd: C:\Users\saroj.singh\AppData\Local\Android\Sdk\platform-tools\adb.exe -s emulator-5554 push "C:\\Users\\saroj.singh\\AppData\\Local\\Temp\\com.whatsapp\\strings.json" /data/local/tmp
+2018-02-27 01:50:57:482 - info: [debug] Checking whether aapt is present
+2018-02-27 01:50:57:484 - info: [debug] Using aapt from C:\Users\saroj.singh\AppData\Local\Android\Sdk\build-tools\27.0.3\aapt.exe
+2018-02-27 01:50:57:484 - info: [debug] Retrieving process from manifest.
+2018-02-27 01:50:57:484 - info: [debug] executing cmd: C:\Users\saroj.singh\AppData\Local\Android\Sdk\build-tools\27.0.3\aapt.exe dump xmltree C:\Users\saroj.singh\Downloads\RedHat_Automation-master\RedHat_Automation-master\RedHat\App\Android\WhatsApp.apk AndroidManifest.xml
+2018-02-27 01:50:57:623 - info: [debug] Set app process to: com.whatsapp
+2018-02-27 01:50:57:623 - info: [debug] Uninstalling com.whatsapp
+2018-02-27 01:50:57:624 - info: [debug] executing cmd: C:\Users\saroj.singh\AppData\Local\Android\Sdk\platform-tools\adb.exe -s emulator-5554 shell "am force-stop com.whatsapp"
+2018-02-27 01:50:58:258 - info: [debug] executing cmd: C:\Users\saroj.singh\AppData\Local\Android\Sdk\platform-tools\adb.exe -s emulator-5554 uninstall com.whatsapp
+2018-02-27 01:50:58:681 - info: [debug] App was uninstalled
+2018-02-27 01:50:58:681 - info: [debug] Checking app cert for C:\Users\saroj.singh\Downloads\RedHat_Automation-master\RedHat_Automation-master\RedHat\App\Android\WhatsApp.apk.
+2018-02-27 01:50:58:682 - info: [debug] executing cmd: java -jar "C:\Program Files (x86)\Appium\node_modules\appium\node_modules\appium-adb\jars\verify.jar" C:\Users\saroj.singh\Downloads\RedHat_Automation-master\RedHat_Automation-master\RedHat\App\Android\WhatsApp.apk
+2018-02-27 01:51:00:796 - info: [debug] App already signed.
+2018-02-27 01:51:00:796 - info: [debug] Zip-aligning C:\Users\saroj.singh\Downloads\RedHat_Automation-master\RedHat_Automation-master\RedHat\App\Android\WhatsApp.apk
+2018-02-27 01:51:00:797 - info: [debug] Checking whether zipalign is present
+2018-02-27 01:51:00:798 - info: [debug] Using zipalign from C:\Users\saroj.singh\AppData\Local\Android\Sdk\build-tools\27.0.3\zipalign.exe
+2018-02-27 01:51:00:801 - info: [debug] Zip-aligning apk.
+2018-02-27 01:51:00:802 - info: [debug] executing cmd: C:\Users\saroj.singh\AppData\Local\Android\Sdk\build-tools\27.0.3\zipalign.exe -f 4 C:\Users\saroj.singh\Downloads\RedHat_Automation-master\RedHat_Automation-master\RedHat\App\Android\WhatsApp.apk C:\Users\saroj.singh\AppData\Local\Temp\118127-9988-2c1fzr\appium.tmp
+2018-02-27 01:51:01:378 - info: [debug] MD5 for app is e7b24f30378de2286b5dfbabe06954f3
+2018-02-27 01:51:01:378 - info: [debug] executing cmd: C:\Users\saroj.singh\AppData\Local\Android\Sdk\platform-tools\adb.exe -s emulator-5554 shell "ls /data/local/tmp/e7b24f30378de2286b5dfbabe06954f3.apk"
+2018-02-27 01:51:01:547 - info: [debug] Getting install status for com.whatsapp
+2018-02-27 01:51:01:547 - info: [debug] Getting device API level
+2018-02-27 01:51:01:548 - info: [debug] executing cmd: C:\Users\saroj.singh\AppData\Local\Android\Sdk\platform-tools\adb.exe -s emulator-5554 shell "getprop ro.build.version.sdk"
+2018-02-27 01:51:01:721 - info: [debug] Device is at API Level 23
+2018-02-27 01:51:01:722 - info: [debug] executing cmd: C:\Users\saroj.singh\AppData\Local\Android\Sdk\platform-tools\adb.exe -s emulator-5554 shell "pm list packages -3 com.whatsapp"
+2018-02-27 01:51:02:057 - info: [debug] App is not installed
+2018-02-27 01:51:02:058 - info: Installing App
+2018-02-27 01:51:02:058 - info: [debug] executing cmd: C:\Users\saroj.singh\AppData\Local\Android\Sdk\platform-tools\adb.exe -s emulator-5554 shell "mkdir -p /data/local/tmp/"
+2018-02-27 01:51:02:225 - info: [debug] Removing any old apks
+2018-02-27 01:51:02:226 - info: [debug] executing cmd: C:\Users\saroj.singh\AppData\Local\Android\Sdk\platform-tools\adb.exe -s emulator-5554 shell "ls /data/local/tmp/*.apk"
+2018-02-27 01:51:02:394 - info: [debug] Found an apk we want to keep at /data/local/tmp/e7b24f30378de2286b5dfbabe06954f3.apk
+2018-02-27 01:51:02:394 - info: [debug] Couldn't find any apks to remove
+2018-02-27 01:51:02:395 - info: [debug] Uninstalling com.whatsapp
+2018-02-27 01:51:02:395 - info: [debug] executing cmd: C:\Users\saroj.singh\AppData\Local\Android\Sdk\platform-tools\adb.exe -s emulator-5554 shell "am force-stop com.whatsapp"
+2018-02-27 01:51:02:978 - info: [debug] executing cmd: C:\Users\saroj.singh\AppData\Local\Android\Sdk\platform-tools\adb.exe -s emulator-5554 uninstall com.whatsapp
+2018-02-27 01:51:03:356 - info: [debug] App was not uninstalled, maybe it wasn't on device?
+2018-02-27 01:51:03:357 - info: [debug] executing cmd: C:\Users\saroj.singh\AppData\Local\Android\Sdk\platform-tools\adb.exe -s emulator-5554 shell "pm install -r /data/local/tmp/e7b24f30378de2286b5dfbabe06954f3.apk"
+2018-02-27 01:51:15:798 - info: [debug] Forwarding system:4724 to device:4724
+2018-02-27 01:51:15:798 - info: [debug] executing cmd: C:\Users\saroj.singh\AppData\Local\Android\Sdk\platform-tools\adb.exe -s emulator-5554 forward tcp:4724 tcp:4724
+2018-02-27 01:51:15:955 - info: [debug] Pushing appium bootstrap to device...
+2018-02-27 01:51:15:956 - info: [debug] executing cmd: C:\Users\saroj.singh\AppData\Local\Android\Sdk\platform-tools\adb.exe -s emulator-5554 push "C:\\Program Files (x86)\\Appium\\node_modules\\appium\\build\\android_bootstrap\\AppiumBootstrap.jar" /data/local/tmp/
+2018-02-27 01:51:16:187 - info: [debug] Pushing settings apk to device...
+2018-02-27 01:51:16:188 - info: [debug] executing cmd: C:\Users\saroj.singh\AppData\Local\Android\Sdk\platform-tools\adb.exe -s emulator-5554 install "C:\Program Files (x86)\Appium\node_modules\appium\build\settings_apk\settings_apk-debug.apk"
+2018-02-27 01:51:16:725 - info: [debug] Pushing unlock helper app to device...
+2018-02-27 01:51:16:726 - info: [debug] executing cmd: C:\Users\saroj.singh\AppData\Local\Android\Sdk\platform-tools\adb.exe -s emulator-5554 install "C:\Program Files (x86)\Appium\node_modules\appium\build\unlock_apk\unlock_apk-debug.apk"
+2018-02-27 01:51:17:239 - info: Starting App
+2018-02-27 01:51:17:239 - info: [debug] Attempting to kill all 'uiautomator' processes
+2018-02-27 01:51:17:239 - info: [debug] Getting all processes with 'uiautomator'
+2018-02-27 01:51:17:240 - info: [debug] executing cmd: C:\Users\saroj.singh\AppData\Local\Android\Sdk\platform-tools\adb.exe -s emulator-5554 shell "ps 'uiautomator'"
+2018-02-27 01:51:17:405 - info: [debug] No matching processes found
+2018-02-27 01:51:17:406 - info: [debug] Running bootstrap
+2018-02-27 01:51:17:406 - info: [debug] spawning: C:\Users\saroj.singh\AppData\Local\Android\Sdk\platform-tools\adb.exe -s emulator-5554 shell uiautomator runtest AppiumBootstrap.jar -c io.appium.android.bootstrap.Bootstrap -e pkg com.whatsapp -e disableAndroidWatchers false
+2018-02-27 01:51:17:722 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: numtests=1
+2018-02-27 01:51:17:723 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: stream=
+2018-02-27 01:51:17:723 - info: [debug] [UIAUTOMATOR STDOUT] io.appium.android.bootstrap.Bootstrap:
+2018-02-27 01:51:17:723 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+2018-02-27 01:51:17:723 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: test=testRunServer
+2018-02-27 01:51:17:723 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: class=io.appium.android.bootstrap.Bootstrap
+2018-02-27 01:51:17:724 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: current=1
+2018-02-27 01:51:17:724 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS_CODE: 1
+2018-02-27 01:51:17:741 - info: [debug] [BOOTSTRAP] [debug] Socket opened on port 4724
+2018-02-27 01:51:17:741 - info: [debug] [BOOTSTRAP] [debug] Appium Socket Server Ready
+2018-02-27 01:51:17:741 - info: [debug] [BOOTSTRAP] [debug] Loading json...
+2018-02-27 01:51:17:745 - info: [debug] Waking up device if it's not alive
+2018-02-27 01:51:17:745 - info: [debug] Pushing command to appium work queue: ["wake",{}]
+2018-02-27 01:51:17:748 - info: [debug] [BOOTSTRAP] [debug] json loading complete.
+2018-02-27 01:51:17:756 - info: [debug] [BOOTSTRAP] [debug] Registered crash watchers.
+2018-02-27 01:51:17:756 - info: [debug] [BOOTSTRAP] [debug] Client connected
+2018-02-27 01:51:17:761 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"wake","params":{}}
+2018-02-27 01:51:17:761 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2018-02-27 01:51:17:761 - info: [debug] [BOOTSTRAP] [debug] Got command action: wake
+2018-02-27 01:51:17:764 - info: [debug] executing cmd: C:\Users\saroj.singh\AppData\Local\Android\Sdk\platform-tools\adb.exe -s emulator-5554 shell "dumpsys window"
+2018-02-27 01:51:17:785 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":true}
+2018-02-27 01:51:17:934 - info: [debug] Screen already unlocked, continuing.
+2018-02-27 01:51:17:934 - info: [debug] Pushing command to appium work queue: ["getDataDir",{}]
+2018-02-27 01:51:17:948 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"getDataDir","params":{}}
+2018-02-27 01:51:17:948 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2018-02-27 01:51:17:948 - info: [debug] [BOOTSTRAP] [debug] Got command action: getDataDir
+2018-02-27 01:51:17:948 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":"\/data"}
+2018-02-27 01:51:17:949 - info: [debug] dataDir set to: /data
+2018-02-27 01:51:17:949 - info: [debug] Pushing command to appium work queue: ["compressedLayoutHierarchy",{"compressLayout":false}]
+2018-02-27 01:51:17:960 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"compressedLayoutHierarchy","params":{"compressLayout":false}}
+2018-02-27 01:51:17:960 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2018-02-27 01:51:17:961 - info: [debug] [BOOTSTRAP] [debug] Got command action: compressedLayoutHierarchy
+2018-02-27 01:51:17:963 - info: [debug] Getting device API level
+2018-02-27 01:51:17:963 - info: [debug] executing cmd: C:\Users\saroj.singh\AppData\Local\Android\Sdk\platform-tools\adb.exe -s emulator-5554 shell "getprop ro.build.version.sdk"
+2018-02-27 01:51:17:984 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":false}
+2018-02-27 01:51:18:127 - info: [debug] Device is at API Level 23
+2018-02-27 01:51:18:128 - info: [debug] executing cmd: C:\Users\saroj.singh\AppData\Local\Android\Sdk\platform-tools\adb.exe -s emulator-5554 shell "am start -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000 -n com.whatsapp/com.whatsapp.Main"
+2018-02-27 01:51:19:004 - info: [debug] Waiting for pkg "com.whatsapp" and activity "com.whatsapp.Main" to be focused
+2018-02-27 01:51:19:004 - info: [debug] Getting focused package and activity
+2018-02-27 01:51:19:005 - info: [debug] executing cmd: C:\Users\saroj.singh\AppData\Local\Android\Sdk\platform-tools\adb.exe -s emulator-5554 shell "dumpsys window windows"
+2018-02-27 01:51:19:204 - info: [debug] executing cmd: C:\Users\saroj.singh\AppData\Local\Android\Sdk\platform-tools\adb.exe -s emulator-5554 shell "getprop ro.build.version.release"
+2018-02-27 01:51:19:548 - info: [debug] Device is at release version 6.0
+2018-02-27 01:51:19:548 - info: [debug] Device launched! Ready for commands
+2018-02-27 01:51:19:548 - info: [debug] Setting command timeout to 200 secs
+2018-02-27 01:51:19:549 - info: [debug] Appium session started with sessionId a9d6e085-e57d-4ceb-9532-da30caf66f33
+2018-02-27 01:51:19:553 - info: <-- POST /wd/hub/session 303 31517.355 ms - 74 
+2018-02-27 01:51:19:652 - info: --> GET /wd/hub/session/a9d6e085-e57d-4ceb-9532-da30caf66f33 {}
+2018-02-27 01:51:19:653 - info: [debug] Responding to client with success: {"status":0,"value":{"platform":"LINUX","browserName":"","platformVersion":"6.0","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"app":"C:\\Users\\saroj.singh\\Downloads\\RedHat_Automation-master\\RedHat_Automation-master\\RedHat\\App\\Android\\WhatsApp.apk","newCommandTimeout":"200","platformVersion":"6.0","browserName":"","platformName":"Android","deviceName":"Nexus_4_API_23"},"app":"C:\\Users\\saroj.singh\\Downloads\\RedHat_Automation-master\\RedHat_Automation-master\\RedHat\\App\\Android\\WhatsApp.apk","newCommandTimeout":"200","platformName":"Android","deviceName":"emulator-5554"},"sessionId":"a9d6e085-e57d-4ceb-9532-da30caf66f33"}
+2018-02-27 01:51:19:657 - info: <-- GET /wd/hub/session/a9d6e085-e57d-4ceb-9532-da30caf66f33 200 5.111 ms - 782 {"status":0,"value":{"platform":"LINUX","browserName":"","platformVersion":"6.0","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"app":"C:\\Users\\saroj.singh\\Downloads\\RedHat_Automation-master\\RedHat_Automation-master\\RedHat\\App\\Android\\WhatsApp.apk","newCommandTimeout":"200","platformVersion":"6.0","browserName":"","platformName":"Android","deviceName":"Nexus_4_API_23"},"app":"C:\\Users\\saroj.singh\\Downloads\\RedHat_Automation-master\\RedHat_Automation-master\\RedHat\\App\\Android\\WhatsApp.apk","newCommandTimeout":"200","platformName":"Android","deviceName":"emulator-5554"},"sessionId":"a9d6e085-e57d-4ceb-9532-da30caf66f33"}
+2018-02-27 01:51:19:713 - info: --> POST /wd/hub/session/a9d6e085-e57d-4ceb-9532-da30caf66f33/timeouts {"type":"implicit","ms":5000}
+2018-02-27 01:51:19:717 - info: [debug] Set Android implicit wait to 5000ms
+2018-02-27 01:51:19:717 - info: [debug] Responding to client with success: {"status":0,"value":null,"sessionId":"a9d6e085-e57d-4ceb-9532-da30caf66f33"}
+2018-02-27 01:51:19:719 - info: <-- POST /wd/hub/session/a9d6e085-e57d-4ceb-9532-da30caf66f33/timeouts 200 5.969 ms - 76 {"status":0,"value":null,"sessionId":"a9d6e085-e57d-4ceb-9532-da30caf66f33"}

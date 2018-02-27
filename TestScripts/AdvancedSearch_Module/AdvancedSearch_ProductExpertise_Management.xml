@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="AdvancedSearch_ProductExpertise_Management">
+	<test name="AdvancedSearch_ProductExpertise_Management">
+		<common>
+		<datasets>
+		<dataset>
+			<username>johnhaberer</username>
+			<password>redhat</password>
+			</dataset>
+			</datasets>
+		</common>
+
+		<advanceSearch>
+			<datasets>
+				<dataset>
+					<searchBy>Red Hat Product Expertise</searchBy>
+					<valuesToSearch>
+					Search1#Management*Red Hat CloudForms;
+					Search2#Management*Red Hat JBoss Operations Network;
+					Search3#Management*Ansible Tower;
+					Search4#Management*Red Hat Satellite;
+					Search5#Management*Red Hat CloudForms,Red Hat JBoss Operations Network;
+					Search6#Management*Red Hat CloudForms,Ansible Tower;
+					Search7#Management*Red Hat CloudForms,Red Hat Satellite;
+					Search8#Management*Red Hat CloudForms,Red Hat JBoss Operations Network,Ansible Tower;
+					Search9#Management*Red Hat CloudForms,Red Hat JBoss Operations Network,Red Hat Satellite;
+					Search10#Management*Red Hat CloudForms,Red Hat JBoss Operations Network,Ansible Tower,Red Hat Satellite
+					</valuesToSearch>
+				</dataset>
+			</datasets>
+		</advanceSearch>
+
+		<classes>
+			<class name="webonise.redHat.java.RH_Search">
+				<methods>
+					<include name="advanceSearch"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite> 

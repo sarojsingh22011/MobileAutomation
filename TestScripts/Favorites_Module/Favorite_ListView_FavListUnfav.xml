@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Favorite_ListView_FavListUnfav">
+	<test name="Favorite_ListView_FavListUnfav">
+		<common>
+		<datasets>
+		<dataset>
+			<username>johnhaberer</username>
+			<password>redhat</password>
+			</dataset>
+			</datasets>
+		</common>
+
+		<favorites>
+			<datasets>
+				<dataset>
+					<viewType>List</viewType>
+					<favoriteVerificationType>Favorite-List-Unfavorite</favoriteVerificationType>
+					<searchBy>Accreditations</searchBy>
+					<valuesToSearch>
+					Search1#Data Center Infrastructure,Middleware Solutions,Cloud Infrastructure
+					</valuesToSearch>
+				</dataset>
+			</datasets>
+		</favorites>
+
+		<classes>
+			<class name="webonise.redHat.java.RH_Favorites">
+				<methods>
+					<include name="favorites"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite> 

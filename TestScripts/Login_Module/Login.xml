@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name = "Login">
+
+<test name = "Valid_Login">
+	<valid_login>
+		<datasets>
+			<dataset>
+				<username>nayotech</username>
+				<password>redhat</password>
+			</dataset>
+		</datasets> 
+	</valid_login>
+
+
+	<classes>
+		<class name="webonise.redHat.java.RH_Login">
+			<methods>
+				<include name="valid_login"></include>
+			</methods>
+		</class>
+	</classes>
+
+</test>
+
+
+
+
+
+</suite>

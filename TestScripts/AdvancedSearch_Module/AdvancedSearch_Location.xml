@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="AdvancedSearch_Accreditations">
+	<test name="AdvancedSearch_Accreditations">
+		<common>
+		<datasets>
+		<dataset>
+			<username>johnhaberer</username>
+			<password>redhat</password>
+			</dataset>
+			</datasets>
+		</common>
+
+		<advanceSearch>
+			<datasets>
+				<dataset>
+					<searchBy>Location</searchBy>
+					<locationPopupMsg>Enable either GPS or any other location service to find current location. Click OK to go to location services settings to let you do so.</locationPopupMsg>
+					<valuesToSearch>CurrentLocation;LocationEdit</valuesToSearch>
+					<locateBy>Pune;Maharashtra;India;411021</locateBy>
+					<locationHeading>Location</locationHeading>
+					<connectionHeader>CONNECTIONS</connectionHeader>
+				</dataset>
+			</datasets>
+		</advanceSearch>
+
+		<classes>
+			<class name="webonise.redHat.java.RH_Search">
+				<methods>
+					<include name="advanceSearch"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite> 

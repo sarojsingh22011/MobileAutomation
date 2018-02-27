@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="1" passed="0">
+  <reporter-output>
+    <line>
+      <![CDATA[TestCase Started]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="48212" started-at="2018-02-27T01:50:31Z" finished-at="2018-02-27T01:51:19Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="48212" started-at="2018-02-27T01:50:31Z" finished-at="2018-02-27T01:51:19Z">
+      <class name="webonise.redHat.java.MobileDemo">
+        <test-method status="PASS" signature="testStart()[pri:0, instance:webonise.redHat.java.MobileDemo@185d8b6]" name="testStart" is-config="true" duration-ms="13029" started-at="2018-02-27T12:50:31Z" finished-at="2018-02-27T12:50:44Z">
+          <reporter-output>
+            <line>
+              <![CDATA[TestCase Started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testStart -->
+        <test-method status="FAIL" signature="atlasTest()[pri:0, instance:webonise.redHat.java.MobileDemo@185d8b6]" name="atlasTest" duration-ms="35047" started-at="2018-02-27T12:50:44Z" finished-at="2018-02-27T12:51:19Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at java.lang.String.replace(Unknown Source)
+	at com.relevantcodes.extentreports.Logger.log(Logger.java:65)
+	at com.relevantcodes.extentreports.AbstractLog.log(AbstractLog.java:68)
+	at com.relevantcodes.extentreports.AbstractLog.log(AbstractLog.java:77)
+	at com.relevantcodes.extentreports.ExtentReports.log(ExtentReports.java:168)
+	at webonise.redHat.java.MobileDemo.atlasTest(MobileDemo.java:34)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- atlasTest -->
+        <test-method status="FAIL" signature="TearDown()[pri:0, instance:webonise.redHat.java.MobileDemo@185d8b6]" name="TearDown" is-config="true" duration-ms="0" started-at="2018-02-27T12:51:19Z" finished-at="2018-02-27T12:51:19Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.relevantcodes.extentreports.AbstractLog.endTest(AbstractLog.java:120)
+	at com.relevantcodes.extentreports.ExtentReports.endTest(ExtentReports.java:111)
+	at webonise.automation.core.WeboAutomation.TearDown(WeboAutomation.java:196)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:703)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method status="SKIP" signature="testEnd()[pri:0, instance:webonise.redHat.java.MobileDemo@185d8b6]" name="testEnd" is-config="true" duration-ms="0" started-at="2018-02-27T12:51:19Z" finished-at="2018-02-27T12:51:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEnd -->
+        <test-method status="SKIP" signature="generateZIPFile()[pri:0, instance:webonise.redHat.java.MobileDemo@185d8b6]" name="generateZIPFile" is-config="true" duration-ms="0" started-at="2018-02-27T12:51:19Z" finished-at="2018-02-27T12:51:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateZIPFile -->
+      </class> <!-- webonise.redHat.java.MobileDemo -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
